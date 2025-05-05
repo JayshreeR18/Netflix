@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    color: #fff;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('Images/header-image.png');
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+
+}
+.logo{
+    width:150px;
+    cursor: alias pointer;
+}
+
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 10px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    
+}
+
+.lang-btn{
+    padding: 7px 10px ;
+    border: 1px solid #fff;
+    background:transparent ;
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.lang-btn img{
+    width: 10px ;
+    margin-left: 10px;
+}
+
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+.header-content h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+}
+
+.header-content h3{
+    font-weight: 400px;
+    margin-bottom: 20px;
+}
+.email-signup {
+    overflow: hidden;
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 700px; /* Control overall width */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .email-signup input {
+    flex: 1;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    padding: 15px 10px;
+    font-size: 16px;
+    color: #333;
+    background-color: transparent;
+  }
+  
+  .email-signup input::placeholder {
+    color: #888;
+  }
+  
+  .email-signup button {
+    background: #db0001;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 16px 25px;
+    white-space: nowrap;
+    transition: background 0.3s ease;
+  }
+  
+  .email-signup button:hover {
+    background: #b80000;
+  }
+
+.trending{
+        padding: 50px;
+}
+.trending h2{
+    padding-left: 50px;
+    margin-bottom: 0px;
+}
+
+.trending-card{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+.card{                                          
+    border-radius: 15px;               
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transform: scale(0.7);
+    transform-origin: center;
+    
+}
+.card:hover{
+    transform: scale(0.8);
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(255,0,150,0.3);
+}
+
+.Reason{
+    padding: 0 50px 50px 50px;
+}
+
+.Reason h2{
+    padding-left: 50px;
+}
+
+.reason-to-join{
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.reason-card:hover {
+    transform: scale(1.05); /* Slightly increase size */
+    cursor: pointer; /* Show pointer to indicate interaction */
+        transform: scale(1.05);
+        box-shadow: 0 10px 30px rgba(255, 0, 150, 0.3);
+      
+  }
+
+
+.reason-card {
+    background: linear-gradient(rgba(43, 29, 134, 0.5),rgba(85, 77, 149, 0.5));   
+    padding: 20px;           
+    padding-bottom: 100px;           
+    width: 22%;                        
+    border-radius: 15px;               
+    position: relative;       
+    transition: transform 0.4s ease, box-shadow 0.4s ease;        
+  }
+
+.footer p{
+    text-align: center;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 20px;
+    padding: 80px;
+    text-decoration: underline;
+    color: white;
+  }
+  
